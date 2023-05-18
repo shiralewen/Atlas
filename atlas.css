@@ -1,0 +1,103 @@
+body{
+    background-image: url("./a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    font-family: 'Lobster', cursive;
+    font-size: large;
+
+}
+
+
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+    color: rgb(21, 39, 81);
+    font-size: 1rem;
+}
+
+tr:nth-child(even) {
+    background: rgba(219, 219, 212, 0.44);
+}
+/* tr:nth-child(even) {
+    background: rgba(251, 251, 208, 0.44);
+} */
+
+tr:nth-child(odd) {
+    background: rgba(59, 59, 56, 0.44);
+}
+/* tr:nth-child(odd) {
+    background: rgba(191, 191, 157, 0.44);
+} */
+
+header{
+    /* height: 500px; */
+    min-height: 60px;
+    background: black;
+    position: sticky;
+    z-index: 999;
+}
+header .burger {
+    display: none;
+  }
+
+  /* .navv{
+    display: block;
+  } */
+
+@media screen and (max-width:768px) {
+
+
+    header .burger {
+        display: block;
+        font-size: 2em;
+        color: grey;
+    
+      }
+      /* header nav {
+        background: black;
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        width: 50%;
+      }
+    
+      header .container nav a {
+        /* background: black; */
+  
+
+    header .navv {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        width: 50%;
+      }
+
+      .navv .logo{
+        display: none;
+      }
+      .navv .home{
+        display: none;
+      }
+
+      header .navv a {
+        background: black;
+        display: block;
+        text-align: center;
+        padding: 12px;
+        border-bottom: 1px solid grey;
+      }
+      .fa-search{
+        color: black;
+      }
+}
